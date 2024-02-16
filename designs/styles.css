@@ -1,0 +1,96 @@
+
+:root {
+	--theme: #ffffff;
+	--txtDark: #ffffff;
+    
+    --bgDark: #000044;
+    --txtLight: #000000;
+}
+
+* {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body, body.dark-mode {
+	margin: 0;
+    padding: 0;
+}
+body {
+	background-color: var(--bgLight);
+    color: var(--txtDark);
+}
+body.dark-mode {
+    background-color: var(--bgDark);
+    color: var(--txtLight);
+}
+
+/* Navigation Code */
+
+nav {
+	position: sticky;
+	top: 0;
+	
+	background-color: #004;
+    color: white;
+	height: 80px;
+	border: 1px solid #fff;
+    border-top: 0;
+    font-family: Arial, sans-serif;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5%;
+	
+	z-index: 5;
+}
+nav h1 {
+	color: aqua;
+
+	transition: all 0.3s;
+}
+nav h1:hover {
+	font-size:2rem;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+}
+nav ul li {
+	padding: 10px 30px;
+}
+nav ul li a {
+	color: #ddf;
+	text-decoration: none;
+	font-size: 2rem;
+	
+	transition: all 0.3s;
+}
+nav ul li a:hover {	
+	font-size: 2.5rem;	
+	color: #aff;
+}
+
+/* Navigation Code *END* */
+
+header, #profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+	border: 1px solid aqua;
+}
+header p {
+    color: #fff;
+}
+#profile {
+	margin: 15% 25% 0;
+}
+
+#myProfile {
+	border: 3px solid aqua;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}
